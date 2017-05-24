@@ -5,8 +5,6 @@ Arduino Robotics at the California College of the Arts, Summer 2017
 
 
 ```Javascript
-/*my processing sketch*/
-
 /*
   Blink
   Turns on an LED on for one second, then off for one second, repeatedly.
@@ -27,29 +25,26 @@ Arduino Robotics at the California College of the Arts, Summer 2017
   
   modified 8 Sep 2016
   by Colby Newman
-
-  modified 26 Jan 2017
-  by Nino Panes
-  (For Digital Electronics Class @ California College of the Arts. npanes@cca.edu)
 */
 
-int ledPin = 8;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(ledPin, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  digitalWrite(ledPin, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);                       // wait for a second
-  
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  digitalWrite(ledPin, LOW);    // turn the LED off by making the voltage LOW
-  delay(500);                       // wait for a second
+  digitalWrite(11, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(11, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
+
+  digitalWrite(10, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(10, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
 }
 ```
