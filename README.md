@@ -31,11 +31,11 @@ Arduino Robotics at the California College of the Arts, Summer 2017
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT); // Initialize PinMode
+  pinMode(10, OUTPUT); //Don't forget to put pinMode or else it will be very dim lighting.
 }
 
-// the loop function runs over and over again forever
+// the loop function runs over and over again forever. Change this to alter the blinking patterns.
 void loop() {
   digitalWrite(11, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(1000);                       // wait for a second
@@ -43,7 +43,7 @@ void loop() {
   delay(1000);                       // wait for a second
 
   digitalWrite(10, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
+  delay(1000);                       // wait for a second 
   digitalWrite(10, LOW);    // turn the LED off by making the voltage LOW
   delay(1000);                       // wait for a second
 }
