@@ -79,7 +79,6 @@ void loop() {
 
 
 ```Javascript
-
 /*
  Fade
 
@@ -104,10 +103,13 @@ int fadeAmount = 5;    // how many points to fade the LED by
 void setup() {
   // declare pin 9 to be an output:
   pinMode(led, OUTPUT);
+  Serial.begin(9600); //Initialize read for print
 }
 
 // the loop routine runs over and over again forever:
 void loop() {
+
+  Serial.println(brightness);
   // set the brightness of pin 11:
   analogWrite(led, brightness);
 
@@ -119,7 +121,7 @@ void loop() {
     fadeAmount = -fadeAmount;
   }
   // wait for 30 milliseconds to see the dimming effect
-  delay(70);
+  delay(40);
 
 
    // set the brightness of pin 11:
@@ -133,7 +135,9 @@ void loop() {
     fadeAmount = -fadeAmount;
   }
   // wait for 30 milliseconds to see the dimming effect
-  delay(70);
+  delay(40);
+
+  
 }
 ```
 
