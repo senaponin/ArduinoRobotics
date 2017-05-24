@@ -1,6 +1,63 @@
 # ArduinoRobotics
 Arduino Robotics at the California College of the Arts, Summer 2017
 
+
+# HW 1 - how to use a sensor
+#### May 24, 2017
+```Javascript
+/*
+  AnalogReadSerial
+  Reads an analog input on pin 0, prints the result to the serial monitor.
+  Graphical representation is available using serial plotter (Tools > Serial Plotter menu)
+  Attach the center pin of a potentiometer to pin A0, and the outside pins to +5V and ground.
+
+  This example code is in the public domain.
+*/
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // initialize serial communication at 9600 bits per second:
+  Serial.begin(9600);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  // read the input on analog pin 0:
+  int sensorValue = analogRead(A0);
+  // print out the value you read:
+  Serial.println(sensorValue);
+  delay(1);        // delay in between reads for stability
+}
+```
+
+# HW 1 - analog write(): Controlling speed or brightness
+#### May 24, 2017
+```Javascript
+/*
+  AnalogReadSerial
+  Reads an analog input on pin 0, prints the result to the serial monitor.
+  Graphical representation is available using serial plotter (Tools > Serial Plotter menu)
+  Attach the center pin of a potentiometer to pin A0, and the outside pins to +5V and ground.
+
+  This example code is in the public domain.
+*/
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // initialize serial communication at 9600 bits per second:
+  Serial.begin(9600);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  // read the input on analog pin 0:
+  int sensorValue = analogRead(A0);
+  // print out the value you read:
+  Serial.println(sensorValue);
+  delay(1);        // delay in between reads for stability
+}
+```
+
 # HW 1 - Optional 2 LED
 #### May 24, 2017 - Optional: Can you figure out how to connect two LEDs to your Arduino and how to make them blink?
 
