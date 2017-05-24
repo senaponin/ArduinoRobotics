@@ -2,7 +2,7 @@
 Arduino Robotics at the California College of the Arts, Summer 2017
 
 # HW 1 - Optional 2 LED
-#### May 24, 2017
+#### May 24, 2017 - Optional: Can you figure out how to connect two LEDs to your Arduino and how to make them blink?
 
 
 ```Javascript
