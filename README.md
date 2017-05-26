@@ -196,7 +196,7 @@ void loop() {
 ##### Encountered Problem
 Using the code from the website only gave me the value "0" when I added a print.ln and created a serial port. Trying another program from the example given by arduino, I was able to make it work. But why is the code that was given from the website not working? (code below) I attached an extra LED light to the existing built in LED pin 13 and when I cover the LDR the blinking goes faster? How does this work?
 
-```
+```Javascript
 /*
   Analog Input
  Demonstrates analog input by reading an analog sensor on analog pin 0 and
@@ -252,7 +252,7 @@ void loop() {
 ##### Fix to problem above
 I placed sensorValue onto [Serial.println(sensorValue);] and I was able to come up with the desired values.(code below)
 
-```
+```Javascript
 /*
   Analog Input
  Demonstrates analog input by reading an analog sensor on analog pin 0 and
