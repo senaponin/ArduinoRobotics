@@ -190,5 +190,120 @@ void loop() {
 }
 ```
 
-# HW 2 -  [AnalogInput tutorial](https://www.arduino.cc/en/Tutorial/AnalogInput)
+# HW 2 -  [Analog Input tutorial](https://www.arduino.cc/en/Tutorial/AnalogInput)
 #### May 26, 2017 - Read and do the Arduino AnalogInput tutorial. Use your LDR and not a potentiometer. Make notes in your "journal" (your README.md file) of any interesting things you discover or any problems that you run into.
+
+##### Encountered Problem
+Using the code from the website only gave me the value "0" when I added a print.ln and created a serial port. Trying another program from the example given by arduino, I was able to make it work. But why is the code that was given from the website not working? (code below) I attached an extra LED light to the existing built in LED pin 13 and when I cover the LDR the blinking goes faster? How does this work?
+
+```
+/*
+  Analog Input
+ Demonstrates analog input by reading an analog sensor on analog pin 0 and
+ turning on and off a light emitting diode(LED)  connected to digital pin 13.
+ The amount of time the LED will be on and off depends on
+ the value obtained by analogRead().
+
+ The circuit:
+ * Potentiometer attached to analog input 0
+ * center pin of the potentiometer to the analog pin
+ * one side pin (either one) to ground
+ * the other side pin to +5V
+ * LED anode (long leg) attached to digital output 13
+ * LED cathode (short leg) attached to ground
+
+ * Note: because most Arduinos have a built-in LED attached
+ to pin 13 on the board, the LED is optional.
+
+
+ Created by David Cuartielles
+ modified 30 Aug 2011
+ By Tom Igoe
+
+ This example code is in the public domain.
+
+ http://www.arduino.cc/en/Tutorial/AnalogInput
+
+ */
+
+int sensorPin = A0;    // select the input pin for the potentiometer
+int ledPin = 13;      // select the pin for the LED
+int sensorValue = 0;  // variable to store the value coming from the sensor
+
+void setup() {
+  // declare the ledPin as an OUTPUT:
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // read the value from the sensor:
+  sensorValue = analogRead(sensorPin);
+  // turn the ledPin on
+  digitalWrite(ledPin, HIGH);
+  // stop the program for <sensorValue> milliseconds:
+  delay(sensorValue);
+  // turn the ledPin off:
+  digitalWrite(ledPin, LOW);
+  // stop the program for for <sensorValue> milliseconds:
+  delay(sensorValue);
+}
+```
+
+##### Fix to problem above
+I placed sensorValue onto [Serial.println(sensorValue);] and I was able to come up with the desired values.(code below)
+
+```
+/*
+  Analog Input
+ Demonstrates analog input by reading an analog sensor on analog pin 0 and
+ turning on and off a light emitting diode(LED)  connected to digital pin 13.
+ The amount of time the LED will be on and off depends on
+ the value obtained by analogRead().
+
+ The circuit:
+ * Potentiometer attached to analog input 0
+ * center pin of the potentiometer to the analog pin
+ * one side pin (either one) to ground
+ * the other side pin to +5V
+ * LED anode (long leg) attached to digital output 13
+ * LED cathode (short leg) attached to ground
+
+ * Note: because most Arduinos have a built-in LED attached
+ to pin 13 on the board, the LED is optional.
+
+
+ Created by David Cuartielles
+ modified 30 Aug 2011
+ By Tom Igoe
+
+ This example code is in the public domain.
+
+ http://www.arduino.cc/en/Tutorial/AnalogInput
+
+ */
+
+int sensorPin = A0;    // select the input pin for the potentiometer
+int ledPin = 13;      // select the pin for the LED
+int sensorValue = 0;  // variable to store the value coming from the sensor
+
+void setup() {
+  // declare the ledPin as an OUTPUT:
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600); //Initialize read for print
+}
+
+void loop() {
+   Serial.println(sensorValue);
+  // read the value from the sensor:
+  sensorValue = analogRead(sensorPin);
+  // turn the ledPin on
+  digitalWrite(ledPin, HIGH);
+  // stop the program for <sensorValue> milliseconds:
+  delay(sensorValue);
+  // turn the ledPin off:
+  digitalWrite(ledPin, LOW);
+  // stop the program for for <sensorValue> milliseconds:
+  delay(sensorValue);
+}
+```
+
