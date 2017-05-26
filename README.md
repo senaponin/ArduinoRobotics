@@ -189,3 +189,6 @@ void loop() {
   delay(1000);                       // wait for a second
 }
 ```
+
+# HW 2 -  [AnalogInput tutorial](https://www.arduino.cc/en/Tutorial/AnalogInput)
+#### May 26, 2017 - Read and do the Arduino AnalogInput tutorial. Use your LDR and not a potentiometer. Make notes in your "journal" (your README.md file) of any interesting things you discover or any problems that you run into.
