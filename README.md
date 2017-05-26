@@ -306,4 +306,6 @@ void loop() {
   delay(sensorValue);
 }
 ```
-
+#### Resource used for this week's assignment
++ http://www.instructables.com/id/Auotmatic-Street-lights-control-using-LDR-and-Ardu/
++ https://www.arduino.cc/en/Tutorial/ifStatementConditional
