@@ -312,3 +312,6 @@ void loop() {
 
 ##### Encountered Problem
 I was able to make the built in LED work however when I added an external LED it was behaving differently from my conditionals that I placed. 
+
+##### Problem Solve
+Make sure the 13 pin goes into ground instead of connecting it to 5V. When this connection is made from 13 Pin > 5V instead of Ground, you will create the opposite effect of the conditional making the external LED light up when it's suppose to be low then off when it's suppose to be high.
