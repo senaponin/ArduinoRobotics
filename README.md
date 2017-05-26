@@ -309,3 +309,6 @@ void loop() {
 ##### Resource used for this week's assignment
 + http://www.instructables.com/id/Auotmatic-Street-lights-control-using-LDR-and-Ardu/
 + https://www.arduino.cc/en/Tutorial/ifStatementConditional
+
+##### Encountered Problem
+I was able to make the built in LED work however when I added an external LED it was behaving differently from my conditionals that I placed. 
