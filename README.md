@@ -315,3 +315,34 @@ I was able to make the built in LED work however when I added an external LED it
 
 ##### Problem Solve
 Make sure the 13 pin goes into ground instead of connecting it to 5V. When this connection is made from 13 Pin > 5V instead of Ground, you will create the opposite effect of the conditional making the external LED light up when it's suppose to be low then off when it's suppose to be high.
+
+# In Class Motor Example
+#### May 26, 2017
+
+```Javascript
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  //pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(2, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(6, OUTPUT );
+
+  //digitalWrite(6, HIGH);
+  analogWrite(6, 230);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(2, LOW);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(4, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
+
+  digitalWrite(2, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(4, HIGH);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
+
+}
+```
