@@ -354,7 +354,7 @@ While() - Keep doing coinditioin as long as it is true. It will never check the 
 For() - Keep a task going for a finite amount of time.
 
 ``` Javascript
-for( int count = 0; count < 7 ; count = count++){
+for( int count = 0; count < 7 ; count++){
 HIGH
 DELAY()
 LOW
