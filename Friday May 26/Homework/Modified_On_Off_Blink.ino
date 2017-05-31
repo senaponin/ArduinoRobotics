@@ -1,29 +1,12 @@
 /*
-  Analog Input
-  Demonstrates analog input by reading an analog sensor on analog pin 0 and
-  turning on and off a light emitting diode(LED)  connected to digital pin 13.
-  The amount of time the LED will be on and off depends on
-  the value obtained by analogRead().
+Based on a code by
+Created by David Cuartielles
+modified May 31, 2017
+By Nino Panes
+his example code is in the public domain.
+http://www.arduino.cc/en/Tutorial/AnalogInput
 
-  The circuit:
-   Potentiometer attached to analog input 0
-   center pin of the potentiometer to the analog pin
-   one side pin (either one) to ground
-   the other side pin to +5V
-   LED anode (long leg) attached to digital output 13
-   LED cathode (short leg) attached to ground
-
-   Note: because most Arduinos have a built-in LED attached
-  to pin 13 on the board, the LED is optional.
-
-
-  Created by David Cuartielles
-  modified 30 Aug 2011
-  By Tom Igoe
-
-  This example code is in the public domain.
-
-  http://www.arduino.cc/en/Tutorial/AnalogInput
+Homework: Make LED turn on above a treshold, and turn off below a treshold. Make it blink in between the code.
 
 */
 
@@ -47,23 +30,15 @@ void loop() {
 
   if (sensorValue >= 400) {
     digitalWrite(ledPin, HIGH);
-    // stop the program for <sensorValue> milliseconds:
-    delay(1000);
   }
   else if (sensorValue <= 130) {
     // turn the ledPin off:
-    digitalWrite(ledPin, LOW);
-    // stop the program for for <sensorValue> milliseconds:
-    delay(1000);
+    digitalWrite(ledPin, LOW); 
   }
 
   else {
     // blinking pattern
     digitalWrite(ledPin, HIGH);
-    // stop the program for <sensorValue> milliseconds:
-    delay(1000);
     digitalWrite(ledPin, LOW);
-    // stop the program for for <sensorValue> milliseconds:
-    delay(1000);
   }
 }
