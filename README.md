@@ -346,3 +346,18 @@ void loop() {
 
 }
 ```
+
+# For and While Explanation
+#### May 30, 2017
+
+While() - Keep doing coinditioin as long as it is true. It will never check the sensor again.
+For() - Keep a task going for a finite amount of time.
+
+``` Javascript
+for( int count = 0; count < 7 ; count = count++){
+HIGH
+DELAY()
+LOW
+DELAY()
+}
+```
