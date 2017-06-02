@@ -364,4 +364,5 @@ DELAY()
 # HW 2 - Problems Encountered
 #### June 2, 2017
 
-Right motor won't ober completely the commands I have given it. Course of action will be to change the wires if that doesn't work change the H bridge. The left one works fine. If that still doesn't work I will look at the code once more and ask Michael this weekend on how to fix the problem.
++ Problem # 1: Right motor won't ober completely the commands I have given it. Course of action will be to change the wires if that doesn't work change the H bridge. The left one works fine. If that still doesn't work I will look at the code once more and ask Michael this weekend on how to fix the problem.
++ Problem # 2: Based on the weight of the robot the motors need to work harder. Something that I noticed. Not really a problem now but this will need to be taken into account when building future motors. Make sure it can handle the weight. 
