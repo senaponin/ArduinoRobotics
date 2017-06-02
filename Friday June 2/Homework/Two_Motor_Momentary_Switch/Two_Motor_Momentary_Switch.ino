@@ -32,7 +32,7 @@ void loop() {
     digitalWrite(7, HIGH);
     digitalWrite(12, LOW);
     delay(1000);
-  } else {
+  } else {                    // Else allows it to change its actions briefly until its done then it goes to the original action.
 
     digitalWrite(3, LOW);     //Move Backward for 1 second
     digitalWrite(4, HIGH);
