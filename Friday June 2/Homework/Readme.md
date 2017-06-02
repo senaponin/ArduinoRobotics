@@ -1,4 +1,4 @@
-### Homework due Friday
+### Homework due 
 
 + Program your contraption to perform a simple sequence of activity
 + Add a pushbutton, so that your contraption only performs its activity if the button is pressed. Once the button is pressed, your contraption must complete its activity, and then it goes back to waiting for the next button press.
