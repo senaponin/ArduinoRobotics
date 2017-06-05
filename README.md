@@ -366,3 +366,58 @@ DELAY()
 
 + Problem # 1: Right motor won't ober completely the commands I have given it. Course of action will be to change the wires if that doesn't work change the H bridge. The left one works fine. If that still doesn't work I will look at the code once more and ask Michael this weekend on how to fix the problem.
 + Problem # 2: Based on the weight of the robot the motors need to work harder. Something that I noticed. Not really a problem now but this will need to be taken into account when building future motors. Make sure it can handle the weight. 
+
+
+# HW 2 - Problem Solve
+#### June 5, 2016
+
+I changed the pins in which it was located. At first I was using pins 2,3, and 4 but changed it to 2, 4, and 5. And that made the difference.
+
+``` Javascript
+//Created by Nino Panes w/ the help of Michael Shiloh. Modified blink Code to turn on Motors
+const int pushButton = 8;
+void setup() {
+  // initialize digital pin output.
+  //pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(2, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT );
+
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(12, OUTPUT );
+
+
+  analogWrite(6, 430);
+  analogWrite(2, 430);
+
+}
+
+// the loop function runs over and over again forever
+void loop() {
+
+  int buttonState = digitalRead(pushButton);
+  // print out the state of the button:
+  Serial.println(buttonState);
+  delay(1);
+  if (buttonState == HIGH) {
+
+    digitalWrite(4, HIGH);   // Move Forward for 1 second
+    digitalWrite(5, LOW);
+
+    digitalWrite(7, HIGH);
+    digitalWrite(12, LOW);
+    delay(1000);
+    
+  } else {                    // Else allows it to change its actions briefly until its done then it goes to the original action.
+
+    digitalWrite(3, LOW);     //Move Backward for 1 second
+    digitalWrite(4, HIGH);
+
+    digitalWrite(7, LOW);
+    digitalWrite(12, HIGH);
+    delay(1000);
+
+  }
+}
+```
