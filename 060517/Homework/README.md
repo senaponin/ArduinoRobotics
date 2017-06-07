@@ -1,6 +1,6 @@
 #### Homework
 
-+ Read the three resources about functions here
++ Read the three resources about functions [here](https://github.com/michaelshiloh/resourcesForClasses#functions)
 + Add the distance measuring sensor to your robot, and write a program to help your robot avoid obstacles. Document as before (picture, video, code with excellent comments). Also describe (in README.md or another .md file) any difficulties you encountered and how you overcame them, and anything interesting you discovered.
 
 #### Advanced challenge:
