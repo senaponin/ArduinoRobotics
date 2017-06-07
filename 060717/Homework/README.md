@@ -6,4 +6,4 @@
 
 #### Advanced challenge: The servo motor points to the middle when the difference between the two light levels is less than 15.
 
-+Start thinking about the final machine you would like to build for this class. You will present your ideas informally on Friday. Make a folder in your Github account called "FinalProject" and put any description, sketches, research, etc. in there.
++ Start thinking about the final machine you would like to build for this class. You will present your ideas informally on Friday. Make a   folder in your Github account called "FinalProject" and put any description, sketches, research, etc. in there.
