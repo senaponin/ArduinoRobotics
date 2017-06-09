@@ -437,7 +437,7 @@ In class Array example
 + Long ( 2 Billion / Large numbers )
 
 
-+ Without Array
+##### Without Array
 ``` Javascript
 const int ledPin = 9;
 const int ledPin = 4;
@@ -459,7 +459,7 @@ void loop() {
 }
 ```
 
-+ With Array
+##### With Array
 ``` Javascript
 //const int ledPin = 9;
 //const int ledPin = 4;
