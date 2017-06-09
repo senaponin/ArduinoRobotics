@@ -423,6 +423,6 @@ void loop() {
 ```
 
 # HW 4 - Problems Encountered/solved
-#### June 6, 2017
+#### June 7, 2017
 
 I couldn't figure out why my LDR weren't responding correctly but then realized that I was using two different resistors therefore it was giving me different results when I was looking at serial monitor. Make sure to have similar resistors for LDR's
