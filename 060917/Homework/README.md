@@ -5,7 +5,7 @@
 
 + Write a function that takes three integer arguments and returns their average. Write a program that uses this function. Review the function resources if necessary.
 
-+ Read all of the resources on arrays
++ Read all of the resources on [arrays](https://github.com/michaelshiloh/resourcesForClasses#arrays)
 
 + Use fritzing to create a schematic showing two light sensors and a servo motor. I am only interested in the schematic view, you do not need to do the breadboard or the PCB views. Upload an image to Github.
 
