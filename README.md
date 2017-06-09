@@ -570,7 +570,7 @@ void loop() {
   Serial.print(sensor1.getAverage());
   
   Serial.print(" Sensor 2: ");
-  Serial.print(sensor1.getAverage());
+  Serial.print(sensor2.getAverage());
   Serial.println();
 
   delay(500);
