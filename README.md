@@ -426,3 +426,66 @@ void loop() {
 #### June 7, 2017
 
 I couldn't figure out why my LDR weren't responding correctly but then realized that I was using two different resistors therefore it was giving me different results when I was looking at serial monitor. Make sure to have similar resistors for LDR's
+
+
+# Array
+#### June 9, 2017
+In class Array example
+
++ int ( whole numbers )
++ float ( decimal points )
++ Long ( 2 Billion / Large numbers )
+
+
++ Without Array
+``` Javascript
+const int ledPin = 9;
+const int ledPin = 4;
+
+const int ledPin = 7;
+
+
+void setup() {
+  // put your setup code here, to run once:
+
+  pinMode(ledPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
+```
+
++ With Array
+``` Javascript
+//const int ledPin = 9;
+//const int ledPin = 4;
+//
+//const int ledPin = 7;
+
+//Initialize Array
+const int ledPins[] = { 9, 4, 7, 2, 3, 5, 6, 8, 12, 11};       //You dont need to write [10] because you already have the numbers
+//or write it this way
+//const int ledPins[10];
+
+void setup() {
+  // put your setup code here, to run once:
+
+  //  pinMode(ledPins, OUTPUT);
+  //  pinMode(ledPins, OUTPUT);
+  //  pinMode(ledPins, OUTPUT);
+
+  for (int i = 0; i < 10; i++);  //i++ = i = 1+1
+  {
+    pinMode(ledPins[1], OUTPUT);
+    Serial.println(ledPins[1]);
+  }
+}
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
+```
