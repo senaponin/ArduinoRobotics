@@ -1,1 +1,1 @@
-
++ Refine your final project proposal. Research and/or do some prototyping. The goal is to answer some questions quickly about how complicated your project is, and whether it is feasible. Research parts, make a tentative parts list, make a list of steps you will have to take. These are suggested steps - take whatever steps seem appropriate to your project. Ask me for help if you need it.
