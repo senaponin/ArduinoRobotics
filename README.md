@@ -1,4 +1,4 @@
-https://www.youtube.com/watch?v=SphUHrlj1Tk - link inspiration
+Arduino Robotics - [Summer Class](https://github.com/michaelshiloh/ArduinoRoboticsSummer2017)
 
 # ArduinoRobotics
 Arduino Robotics at the California College of the Arts, Summer 2017
