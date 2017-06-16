@@ -1,7 +1,6 @@
-Arduino Robotics - [Summer Class](https://github.com/michaelshiloh/ArduinoRoboticsSummer2017)
 
 # ArduinoRobotics
-Arduino Robotics at the California College of the Arts, Summer 2017
+Arduino Robotics at the California College of the Arts, Summer 2017[Class Link](https://github.com/michaelshiloh/ArduinoRoboticsSummer2017)
 
 
 # HW 1 - how to use a sensor
